@@ -121,6 +121,9 @@ function blob_fixup {
         vendor/lib64/libcam.utils.sensorprovider.so)
             "$PATCHELF" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge_mtk.so" "$2"
             ;;
+        lib64/libshowlogo.so)
+            "${PATCHELF}" --add-needed "libshim_showlogo.so" "${2}"
+            ;;
     esac
 }
 

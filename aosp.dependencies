@@ -12,6 +12,10 @@
     "target_path": "hardware/xiaomi"
   },
   {
+    "repository": "vendor_gcgop",
+    "target_path": "vendor/gcgop"
+  },
+  {
     "repository": "android_kernel_xiaomi_mt6785",
     "target_path": "kernel/xiaomi/mt6785"
   }

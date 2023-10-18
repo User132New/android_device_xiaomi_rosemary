@@ -12,17 +12,28 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/rosemary/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_rosemary
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_AOSP_RECOVERY := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_DEVICE := rosemary
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := M2101K7BNY
+PRODUCT_NAME := aosp_rosemary
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_SYSTEM_NAME := rosemary_global
+PRODUCT_SYSTEM_DEVICE := rosemary
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="rosemary-user 11 RP1A.200720.011 V12.5.16.0.RKLMIXM release-keys"
+    TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
+    TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
 BUILD_FINGERPRINT := Redmi/rosemary_global/rosemary:11/RP1A.200720.011/V12.5.16.0.RKLMIXM:user/release-keys

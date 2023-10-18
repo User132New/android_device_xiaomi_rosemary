@@ -93,11 +93,10 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6785
 TARGET_KERNEL_CONFIG := rosemary_defconfig
 BOARD_KERNEL_SEPARATED_DTBO := true
+TARGET_KERNEL_CLANG_COMPILE := true 
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/kernel/linux-x86/clang-r416183b/
 BOARD_CUSTOM_DTBOIMG_MK := $(DEVICE_PATH)/dtbo/dtbo.mk
 BOARD_KERNEL_IMAGE_NAME := Image.gz
-
-# Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := rosemary,secret,maltose
@@ -117,16 +116,6 @@ BOARD_MAIN_PARTITION_LIST := \
     system_ext \
     product \
     vendor
-
-# Reserve space for gapps install
-ifneq ($(WITH_GMS),true)
-BOARD_PRODUCTIMAGE_EXTFS_INODE_COUNT := -1
-BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 614400000
-BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT := -1
-BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 1752350720
-BOARD_SYSTEM_EXTIMAGE_EXTFS_INODE_COUNT := -1
-BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 92160000
-endif
 
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -193,7 +182,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/aosp/config/device_framework_matrix.xml
 
 # VNDK
 BOARD_VNDK_VERSION := current

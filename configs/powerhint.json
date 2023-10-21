@@ -460,7 +460,7 @@
       "PowerHint": "INTERACTION",
       "Node": "TASchedtuneBoost",
       "Duration": 0,
-      "Value": "20"
+      "Value": "40"
     },
     {
       "PowerHint": "INTERACTION",

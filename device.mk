@@ -47,6 +47,11 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service.mediatek \
@@ -430,6 +435,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@2.1-service.multihal \
     android.hardware.sensors@1.0.vendor \
     android.hardware.sensors@2.0.vendor \
@@ -482,7 +488,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi.hostapd@1.2.vendor
 
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service-lazy.rosemary
+    android.hardware.wifi-service
 
 PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl \

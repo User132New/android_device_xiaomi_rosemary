@@ -277,6 +277,26 @@
         <fqname>@2.0::ISupplicant/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.wifi</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IWifi</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IWifi/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.frameworks.sensorservice</name> 
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISensorManager</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::ISensorManager/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.microtrust.hardware.soter</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::ISoter/default</fqname>

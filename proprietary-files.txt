@@ -210,6 +210,9 @@ vendor/etc/aurisys_param/Speech_AudioParam.xml
 vendor/etc/aurisys_config.xml
 vendor/etc/aurisys_config_hifi3.xml
 
+# Protobuf
+-vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek
 vendor/bin/autobt

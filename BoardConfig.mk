@@ -98,7 +98,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6785
 TARGET_KERNEL_CONFIG := rosemary_defconfig
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CLANG_COMPILE := true 
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r416183b/
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/kernel/linux-x86/clang-r416183b/
 BOARD_CUSTOM_DTBOIMG_MK := $(DEVICE_PATH)/dtbo/dtbo.mk
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 

@@ -445,7 +445,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0
 
 PRODUCT_PACKAGES += \
-    libsensorndkbridge
+    libsensorndkbridge_mtk
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30

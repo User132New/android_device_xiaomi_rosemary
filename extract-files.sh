@@ -116,6 +116,14 @@ function blob_fixup {
         lib/libsink.so)
             "${PATCHELF}" --add-needed "libshim_vtservice.so" "${2}"
             ;;
+        vendor/lib64/libaalservice.so)
+            "$PATCHELF" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge_mtk.so" "$2"
+            "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
+            ;;
+        vendor/bin/mnld|\
+        vendor/lib64/libcam.utils.sensorprovider.so)
+            "$PATCHELF" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge_mtk.so" "$2"
+            ;;
     esac
 }
 

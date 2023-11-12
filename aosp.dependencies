@@ -14,5 +14,10 @@
   {
     "repository": "android_kernel_xiaomi_mt6785",
     "target_path": "kernel/xiaomi/mt6785"
+  },
+  {
+    "repository": "ProjectKasumi/vendor_gcgop",
+    "target_path": "vendor/gcgop",
+    "branch": "kasumi-v2"
   }
 ]

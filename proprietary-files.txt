@@ -1864,7 +1864,7 @@ etc/init/init.vtservice.rc
 -framework/mediatek-ims-extension-plugin.jar
 -framework/mediatek-ims-legacy.jar
 -framework/mediatek-telecom-common.jar
--framework/mediatek-telephony-base.jar
+-framework/mediatek-telephony-base.jar|234b814a00cf8ce92f324e5202c666645a82a050
 -framework/mediatek-telephony-common.jar
 lib/libcomutils.so
 lib/libimsma.so

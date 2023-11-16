@@ -30,17 +30,6 @@ cc_library_shared {
 }
 
 cc_library_shared {
-    name: "libshim_showlogo",
-    srcs: ["libshim_showlogo.cpp"],
-    shared_libs: [
-        "libui",
-        "libgui",
-        "libutils",
-    ],
-    local_include_dirs: ["include"]
-}
-
-cc_library_shared {
     name: "libshim_utils",
     srcs: ["libshim_utils.cpp"],
     vendor: true,

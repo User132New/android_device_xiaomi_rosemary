@@ -1537,12 +1537,12 @@ vendor/xbin/dc_cal
 # Camera Utils - from rosemary-user 12 SP1A.210812.016 V13.0.2.0.SFFRUXM release-keys
 vendor/lib64/libmtkcam_stdutils.so|81c34e3e711728010104cab05cc189f2a4742adc|10dfa91898c92a0ca90d1e77621f60f20091fd5a 
 
-# Charger
-bin/kpoc_charger
-etc/init/kpoc_charger.rc
-lib/libshowlogo.so
-lib/libsysenv_system.so
-vendor/bin/batterysecret
+# Charger - from rosemary-user 12 SP1A.210812.016 V13.0.16.0.SKLMIXM release-keys
+bin/kpoc_charger|4d7f53ddc90b7012daea9b718ce333388e917347
+etc/init/kpoc_charger.rc|78e5ceefcbd35490f3959853a07bb3eb6c99f616
+lib/libsysenv_system.so|93eb7a2a3440f5e42ef4ff4ae7389c44c7defc8d
+lib64/libshowlogo.so|416a0c13ce36de90d272827a42ef4971b9d2864a
+vendor/bin/batterysecret|4e3340f4bf9df860fee43ead8cc8ba99fd6a8e85
 
 # DRM
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine

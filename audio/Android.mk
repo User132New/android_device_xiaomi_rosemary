@@ -8,8 +8,6 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/init
 LOCAL_SRC_FILES := $(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
 
-LOCAL_PATH := hardware/interfaces/audio/common/all-versions/default/service
-
 include $(CLEAR_VARS)
 LOCAL_MODULE := android.hardware.audio.service.mediatek
 LOCAL_REQUIRED_MODULES := android.hardware.audio.service.mediatek.rc

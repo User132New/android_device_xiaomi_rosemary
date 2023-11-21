@@ -159,9 +159,6 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 SELINUX_IGNORE_NEVERALLOWS := true
 
-# SELinux Permissive
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-
 # SPL
 VENDOR_SECURITY_PATCH := 2022-03-01
 

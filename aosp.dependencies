@@ -1,31 +1,31 @@
 [
   {
-    "remote": "pixelbuilds",
-    "repository": "android_device_mediatek_sepolicy_vndr",
-    "target_path": "device/mediatek/sepolicy_vndr"
+    "remote": "github",
+    "repository": "PixelBuilds-Staging/android_device_mediatek_sepolicy_vndr",
+    "target_path": "device/mediatek/sepolicy_vndr",
+    "branch": "unity"
   },
   {
-    "remote": "pixelbuilds",
-    "repository": "android_hardware_mediatek",
-    "target_path": "hardware/mediatek"
+    "remote": "github",
+    "repository": "PixelBuilds-Staging/android_hardware_mediatek",
+    "target_path": "hardware/mediatek",
+    "branch": "unity"
   },
   {
-    "remote": "pixelbuilds",
-    "repository": "android_hardware_xiaomi",
-    "target_path": "hardware/xiaomi"
+    "remote": "github",
+    "repository": "PixelBuilds-Staging/android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch": "unity"
   },
   {
-    "repository": "android_kernel_xiaomi_mt6785",
-    "target_path": "kernel/xiaomi/mt6785"
+    "remote": "github",
+    "repository": "PixelBuilds-Devices/android_kernel_xiaomi_mt6785",
+    "target_path": "kernel/xiaomi/mt6785",
+    "branch": "unity"
   },
   {
-    "remote": "pixelbuilds-blobs-gitlab",
-    "repository": "android_vendor_xiaomi_rosemary",
+    "remote": "halcyon-gitlab",
+    "repository": "vendor_xiaomi_rosemary",
     "target_path": "vendor/xiaomi/rosemary"
-  },
-  {
-    "repository": "ProjectKasumi/vendor_gcgop",
-    "target_path": "vendor/gcgop",
-    "branch": "kasumi-v2"
   }
 ]

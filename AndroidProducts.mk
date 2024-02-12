@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_rosemary.mk
+    $(LOCAL_DIR)/halcyon_rosemary.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_rosemary-user \
-    aosp_rosemary-userdebug \
-    aosp_rosemary-eng
+    halcyon_rosemary-user \
+    halcyon_rosemary-userdebug \
+    halcyon_rosemary-eng

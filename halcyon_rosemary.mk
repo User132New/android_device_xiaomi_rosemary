@@ -11,22 +11,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/rosemary/device.mk)
 
-# Inherit some common PixelBuilds stuff.
-$(call inherit-product, vendor/pb/config/common_full_phone.mk)
+# Inherit some common Halcyon stuff.
+$(call inherit-product, vendor/halcyon/config/common.mk)
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_AOSP_RECOVERY := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Build GCamGO
-$(call inherit-product-if-exists, vendor/gcgop/config.mk)
+#Use Face unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 PRODUCT_DEVICE := rosemary
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 10S
-PRODUCT_NAME := aosp_rosemary
+PRODUCT_NAME := halcyon_rosemary
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_SYSTEM_NAME := rosemary_global

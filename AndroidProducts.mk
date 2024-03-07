@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bootleg_rosemary.mk
+    $(LOCAL_DIR)/halcyon_rosemary.mk
 
 COMMON_LUNCH_CHOICES := \
-    bootleg_rosemary-user \
-    bootleg_rosemary-userdebug \
-    bootleg_rosemary-eng
+    halcyon_rosemary-user \
+    halcyon_rosemary-userdebug \
+    halcyon_rosemary-eng

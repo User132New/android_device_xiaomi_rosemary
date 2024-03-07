@@ -11,14 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/rosemary/device.mk)
 
-# Inherit some common Bootleggers stuff.
-$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
+# Inherit some common Awaken stuff.
+$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
 
 # Build GCamGO
 GCGOP_VENDOR_DIR ?= vendor/kasumi/gcgop
 $(call inherit-product-if-exists, $(GCGOP_VENDOR_DIR)/config.mk)
 
-PRODUCT_NAME := bootleg_rosemary
+PRODUCT_NAME := awaken_rosemary
 PRODUCT_DEVICE := rosemary
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
@@ -43,7 +43,3 @@ TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
-
-# Maintainer
-DEVICE_MAINTAINERS := Stella Bloom (stelbl/windowz414)
-BOOTLEGGERS_BUILD_TYPE := Shishufied

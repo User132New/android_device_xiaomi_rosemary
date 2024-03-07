@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bootleg_rosemary.mk
+    $(LOCAL_DIR)/awaken_rosemary.mk
 
 COMMON_LUNCH_CHOICES := \
-    bootleg_rosemary-user \
-    bootleg_rosemary-userdebug \
-    bootleg_rosemary-eng
+    awaken_rosemary-user \
+    awaken_rosemary-userdebug \
+    awaken_rosemary-eng

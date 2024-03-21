@@ -15,6 +15,12 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Maintainer info -->
     <string name="awaken_maintainer">User132New_GitHub</string>
+
+     <!-- Battery health -->
+    <string name="config_batteryHealthNode"></string>
+    <string name="config_batteryRemainingCapacityNode"></string>
+    <string name="config_batteryDesignCapacityNode"></string>
 
 </resources>
